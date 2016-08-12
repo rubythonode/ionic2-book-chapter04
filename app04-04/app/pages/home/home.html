@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Customer Pipe Demo (TemperatureConverterPipe)
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <p> {{30|temperatureConverter:'C2F':true}} </p>
+    </ion-item>
+    <ion-item>
+      <p> {{120|temperatureConverter:'F2C':true}} </p>
+    </ion-item>
+    <ion-item>
+      <p> {{12|temperatureConverter:'C2F':false}} </p>
+    </ion-item>
+  </ion-list>
+</ion-content>

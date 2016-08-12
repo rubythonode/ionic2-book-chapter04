@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic 2 Directive Demo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <ion-item>
+    <ion-label>BG Color</ion-label>
+    <ion-select [(ngModel)]="bgColor">
+      <ion-option value="blue" checked="true">Blue</ion-option>
+      <ion-option value="green">Green</ion-option>
+      <ion-option value="yellow">Yellow</ion-option>
+      <ion-option value="red">Red</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <p [bgHighlight]="bgColor">Text to highlight</p>
+  </ion-item>
+</ion-content>

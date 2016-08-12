@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Date Pipe Demo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <p> {{date | date:'mediumDate'}} </p>
+    </ion-item>
+    <ion-item>
+      <p> {{date | date:'yMMMMd'}} </p>
+    </ion-item>
+    <ion-item>
+      <p> {{date | date:'shortTime'}} </p>
+    </ion-item>
+  </ion-list>
+</ion-content>
